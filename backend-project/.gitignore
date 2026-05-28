@@ -1,4 +1,21 @@
-/.env
-/node_modules
+# dependencies
+node_modules/
+
+# environment variables
+.env
+
+# build files
 dist/
 build/
+
+# logs
+*.log
+npm-debug.log*
+
+# editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
