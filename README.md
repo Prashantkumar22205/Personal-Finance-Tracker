@@ -1,6 +1,6 @@
 # 💰 Personal Finance Tracker
 
-A modern full-stack Personal Finance Tracker web application that helps users manage their daily finances efficiently. Users can track income and expenses, visualize financial data with charts, and monitor spending habits through an interactive dashboard.
+A modern full-stack Personal Finance Tracker web application that helps users manage their daily finances efficiently. Users can track income and expenses, visualize financial data with charts, monitor spending habits, set monthly budgets, and export transaction data through an interactive dashboard.
 
 ---
 
@@ -8,13 +8,13 @@ A modern full-stack Personal Finance Tracker web application that helps users ma
 
 ### Frontend
 
-```bash id="z5rk9n"
+```bash
 https://your-frontend-url.vercel.app
 ```
 
 ### Backend API
 
-```bash id="k6v2pd"
+```bash
 https://your-backend-url.onrender.com
 ```
 
@@ -22,15 +22,33 @@ https://your-backend-url.onrender.com
 
 ---
 
+# 🎯 Key Features Implemented
+
+* JWT Authentication
+* MongoDB Atlas Integration
+* Full CRUD Operations
+* Search & Filters
+* Monthly Budget Tracking
+* CSV Export
+* Analytics Dashboard
+* Responsive Design
+
+---
+
 # ✨ Features
 
 * 🔐 User Authentication & Authorization
 * ➕ Add Income and Expense Transactions
+* ✏️ Edit Transactions
 * 🗑️ Delete Transactions
 * 📊 Dashboard with Financial Summary
 * 📈 Interactive Charts & Analytics
-* 📅 Date-wise Transaction Filtering
+* 🔍 Search Transactions
+* 🏷️ Filter Transactions by Category
+* 📅 Filter Transactions by Date
 * 📜 Transaction History Management
+* 💰 Monthly Budget Tracker
+* 📤 Export Transactions to CSV
 * 📱 Responsive UI for All Devices
 * ⚡ Fast and Smooth User Experience
 * 🔒 Secure Backend API Integration
@@ -46,16 +64,18 @@ https://your-backend-url.onrender.com
 * Axios
 * Recharts
 * React Router DOM
+* Context API
 * Vite
 
 ## Backend
 
 * Node.js
 * Express.js
+* JWT Authentication
 
 ## Database
 
-* MongoDB
+* MongoDB Atlas
 * Mongoose
 
 ## Deployment & Tools
@@ -63,25 +83,34 @@ https://your-backend-url.onrender.com
 * Git & GitHub
 * Postman
 * MongoDB Atlas
-* Render / Railway
-* Vercel / Netlify
+* Render
+* Vercel
 
 ---
 
 # 📂 Project Structure
 
-```bash id="r9pq8h"
+```bash
 Personal-Finance-Tracker/
 │
 ├── backend-project/
 │   ├── src/
-│   ├── node_modules/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── config/
+│   │
 │   ├── package.json
 │   └── .env
 │
 ├── frontend-project/
 │   ├── src/
-│   ├── public/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   └── assets/
+│   │
 │   ├── package.json
 │   └── vite.config.js
 │
@@ -94,7 +123,7 @@ Personal-Finance-Tracker/
 
 ## 1️⃣ Clone the Repository
 
-```bash id="w3b5mn"
+```bash
 git clone https://github.com/Prashantkumar22205/Personal-Finance-Tracker.git
 ```
 
@@ -104,13 +133,13 @@ git clone https://github.com/Prashantkumar22205/Personal-Finance-Tracker.git
 
 ## Navigate to Backend Folder
 
-```bash id="79hq3m"
+```bash
 cd Personal-Finance-Tracker/backend-project
 ```
 
 ## Install Dependencies
 
-```bash id="f4a6ju"
+```bash
 npm install
 ```
 
@@ -118,7 +147,7 @@ npm install
 
 Create a `.env` file inside `backend-project` and add:
 
-```env id="v7tx2d"
+```env
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 JWT_SECRET=your_secret_key
@@ -126,13 +155,13 @@ JWT_SECRET=your_secret_key
 
 ## Start Backend Server
 
-```bash id="9g5wdp"
+```bash
 npm run dev
 ```
 
 Backend will run on:
 
-```bash id="9f8mt2"
+```bash
 http://localhost:5000
 ```
 
@@ -142,25 +171,25 @@ http://localhost:5000
 
 ## Navigate to Frontend Folder
 
-```bash id="c8jw4x"
+```bash
 cd ../frontend-project
 ```
 
 ## Install Dependencies
 
-```bash id="v2fk7d"
+```bash
 npm install
 ```
 
 ## Start Frontend
 
-```bash id="t3m6kp"
+```bash
 npm run dev
 ```
 
 Frontend will run on:
 
-```bash id="a7x2zd"
+```bash
 http://localhost:5173
 ```
 
@@ -170,22 +199,35 @@ http://localhost:5173
 
 ## Authentication
 
-* User Login
 * User Registration
+* User Login
 * JWT Authentication
+* Protected Routes
 
 ## Transaction Management
 
 * Add Transactions
+* Edit Transactions
 * Delete Transactions
 * View Transaction History
+* Search Transactions
+* Filter Transactions
 
 ## Dashboard
 
 * Financial Summary
-* Expense Tracking
-* Income Tracking
-* Analytics Charts
+* Total Income Tracking
+* Total Expense Tracking
+* Balance Calculation
+* Category-wise Expense Analysis
+* Interactive Pie Charts
+* Monthly Budget Monitoring
+
+## Additional Features
+
+* Monthly Budget Tracker
+* CSV Export Functionality
+* Responsive User Interface
 
 ---
 
@@ -201,35 +243,61 @@ http://localhost:5173
 
 # 📸 Screenshots
 
-Add your project screenshots here.
+Add screenshots of:
 
-```bash id="9n3bqk"
+```bash
+screenshots/login-page.png
+
+screenshots/register-page.png
+
 screenshots/dashboard.png
-screenshots/login.png
+
+screenshots/transactions.png
+
+screenshots/budget-tracker.png
 ```
 
 ---
 
 # 🚀 Future Improvements
 
-* Edit Transactions
 * Export Reports as PDF
-* Budget Planning Feature
 * Monthly Financial Goals
+* Recurring Transactions
 * Dark Mode
 * Email Notifications
+* Multi-Currency Support
 
 ---
 
 # 👨‍💻 Author
 
-### Prashant Kumar
+## Prashant Kumar
 
-* GitHub: https://github.com/Prashantkumar22205
+GitHub:
+https://github.com/Prashantkumar22205
 
 ---
 
 # ⭐ If You Like This Project
 
-Give this repository a ⭐ on GitHub.
+If you found this project useful, please give it a ⭐ on GitHub.
 
+---
+
+## 📌 Project Highlights
+
+This project demonstrates:
+
+* Full-Stack MERN Development
+* REST API Development
+* JWT Authentication
+* MongoDB Database Design
+* State Management with Context API
+* CRUD Operations
+* Data Visualization
+* Responsive UI Development
+* Real-World Financial Tracking Application
+
+```
+```
