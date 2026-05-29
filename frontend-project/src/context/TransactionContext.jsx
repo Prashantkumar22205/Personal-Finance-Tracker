@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
+import { API_URL } from "../config";
 
 const TransactionContext = createContext(undefined);
 
@@ -16,7 +17,7 @@ export function TransactionProvider({ children }) {
     try {
 
       const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/api/transactions`,
+        `${API_URL }/api/transactions`,
         {
           withCredentials: true,
         }
@@ -42,7 +43,7 @@ export function TransactionProvider({ children }) {
     try {
 
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/transactions/add`,
+        `${API_URL }/api/transactions/add`,
         transactionData,
         {
           withCredentials: true,
@@ -66,7 +67,7 @@ export function TransactionProvider({ children }) {
     try {
 
       await axios.delete(
-        `${import.meta.env.VITE_API_URL}/api/transactions/${id}`,
+        `${API_URL }/api/transactions/${id}`,
         {
           withCredentials: true,
         }
@@ -87,7 +88,7 @@ export function TransactionProvider({ children }) {
   try {
 
     const res = await axios.put(
-      `${import.meta.env.VITE_API_URL}/api/transactions/${id}`,
+      `${API_URL }/api/transactions/${id}`,
       updatedData,
       {
         withCredentials: true,

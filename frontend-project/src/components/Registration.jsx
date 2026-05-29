@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
+import { API_URL } from "../config";
+
 import { Wallet } from 'lucide-react';
 
 export default function Registration() {
@@ -40,7 +42,7 @@ export default function Registration() {
     setLoading(true);
     try {
 
-       const res = await axios.post( `${import.meta.env.VITE_API_URL}/api/auth/register`,{
+       const res = await axios.post( `${ API_URL}/api/auth/register`,{
         name:form.name,
         email: form.email,
         password : form.password
