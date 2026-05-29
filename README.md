@@ -9,7 +9,7 @@ A modern full-stack Personal Finance Tracker web application that helps users ma
 ### Frontend
 
 ```bash
-https://personal-finance-tracker-git-main-prashant-s-projects20.vercel.app/
+personal-finance-tracker-git-main-prashant-s-projects20.vercel.app
 ```
 
 ### Backend API
