@@ -9,13 +9,13 @@ A modern full-stack Personal Finance Tracker web application that helps users ma
 ### Frontend
 
 ```bash
-https://your-frontend-url.vercel.app
+[https://your-frontend-url.vercel.app](https://personal-finance-tracker-git-main-prashant-s-projects20.vercel.app/)
 ```
 
 ### Backend API
 
 ```bash
-https://your-backend-url.onrender.com
+[https://your-backend-url.onrender.com](https://personal-finance-tracker-6e17.onrender.com)
 ```
 
 > Replace the above URLs with your deployed project links.
@@ -246,15 +246,18 @@ http://localhost:5173
 Add screenshots of:
 
 ```bash
-screenshots/login-page.png
+<img width="1883" height="862" alt="image" src="https://github.com/user-attachments/assets/1bfb3329-f6ff-4c17-8617-9c9669c2faf4" />
 
-screenshots/register-page.png
+<img width="1637" height="831" alt="image" src="https://github.com/user-attachments/assets/6a0ed0da-f5ff-4d9a-a91b-c23056430146" />
 
-screenshots/dashboard.png
+<img width="1811" height="843" alt="image" src="https://github.com/user-attachments/assets/bd6bad46-a26a-498b-a83b-9c372b111950" />
 
-screenshots/transactions.png
+<img width="1811" height="848" alt="image" src="https://github.com/user-attachments/assets/f225d374-e64c-4991-a297-16e1f88141e1" />
 
-screenshots/budget-tracker.png
+<img width="1741" height="474" alt="image" src="https://github.com/user-attachments/assets/9eb2a64a-1dbe-44f0-8ab4-c7c58c0369f9" />
+
+<img width="1838" height="857" alt="image" src="https://github.com/user-attachments/assets/c5b6bf43-4043-464e-a180-b682450eaec6" />
+
 ```
 
 ---
