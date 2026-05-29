@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { API_URL } from "../config";
+import { Link } from "react-router-dom";
 
 import { Lock, Wallet, Eye, EyeOff, Mail } from "lucide-react";
 
@@ -164,12 +165,12 @@ export default function Login({ onLogin }) {
         <div className="mt-8 pt-6 border-t border-gray-200">
           <p className="text-sm text-center text-gray-600">
             Don&apos;t have an account?{" "}
-            <a
-              href="/register"
-              className="text-blue-600 font-medium hover:underline"
-            >
-              Sign up here
-            </a>
+           <Link
+                to="/register"
+                className="text-blue-600 font-medium hover:underline"
+              >
+                Sign up here
+              </Link>
           </p>
         </div>
       </div>
