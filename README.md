@@ -9,13 +9,13 @@ A modern full-stack Personal Finance Tracker web application that helps users ma
 ### Frontend
 
 ```bash
-https://your-frontend-url.vercel.app
+[Live Demo](https://personal-finance-tracker-git-main-prashant-s-projects20.vercel.app/)
 ```
 
 ### Backend API
 
 ```bash
-https://your-backend-url.onrender.com
+[Backend API](https://personal-finance-tracker-6e17.onrender.com)
 ```
 
 
@@ -243,19 +243,30 @@ http://localhost:5173
 
 # 📸 Screenshots
 
-Add screenshots of:
+## Register Page
+![Register](screenshort/Register.png)
 
-```bash
-screenshots/login-page.png
+## Login Page
 
-screenshots/register-page.png
+![Login Page](screenshort/Login.png)
 
-screenshots/dashboard.png
+## Dashboard
 
-screenshots/transactions.png
+![Dashboard](screenshort/Dashboard.png)
 
-screenshots/budget-tracker.png
-```
+## Transactions
+
+![Transactions](screenshort/Transactions.png)
+
+## Budget Tracker
+![Budget Tracker](screenshort/BudgetTracker.png)
+
+## Analytics
+
+![Analytics](screenshort/AnalyticOverview.png)
+
+
+
 
 ---
 
