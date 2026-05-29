@@ -27,8 +27,9 @@ const userRegisteration = async(req,res)=>{
 
        res.cookie("token",{
           httpOnly: true,        // 🔐 cannot be accessed by JS
-          secure: false,         // ⚠️ true only in production (HTTPS)
-          sameSite: "lax",        // ✅ allows frontend (localhost)
+          secure: true,         // ⚠️ true only in production (HTTPS)
+          sameSite: "none",        // ✅ allows frontend (localhost)
+          maxAge: 3 * 24 * 60 * 60 * 1000,
       })
 
        res.status(201).json({
@@ -72,8 +73,9 @@ const userLogin = async(req,res)=>{
       const token = jwt.sign({userId:user._id,email: user.email},process.env.JWT_SecretKey,{expiresIn:"3d"})
       res.cookie("token",token,{
           httpOnly: true,        // 🔐 cannot be accessed by JS
-          secure: false,         // ⚠️ true only in production (HTTPS)
-          sameSite: "lax",        // ✅ allows frontend (localhost)
+          secure: true,         // ⚠️ true only in production (HTTPS)
+          sameSite: "none",        // ✅ allows frontend (localhost)
+          maxAge: 3 * 24 * 60 * 60 * 1000,
       });
 
       res.status(201).json({
