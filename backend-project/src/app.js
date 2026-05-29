@@ -6,9 +6,7 @@ const cors = require("cors")
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173",
-    "https://personal-finance-tracker-kwjilaej6-prashant-s-projects20.vercel.app",
-    ],
+    origin: true,
     credentials: true,              
   }));
 
