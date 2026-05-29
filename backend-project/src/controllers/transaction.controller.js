@@ -46,7 +46,10 @@ const transactionModel = require("../models/transaction.model")
 
     const updatedTransaction =
       await transactionModel.findByIdAndUpdate(
-        req.params.id,
+        {
+           _id:req.params.id,
+          user: req.user.userId,
+        },
         req.body,
         {
          returnDocument: "after"
@@ -69,7 +72,10 @@ const transactionModel = require("../models/transaction.model")
  const deleteTransaction = async (req, res) => {
   try {
 
-    await transactionModel.findByIdAndDelete(req.params.id);
+    await transactionModel.findByIdAndDelete({
+    _id:  req.params.id,
+    user:  req.user.userId
+   } );
 
     res.status(200).json({
       message: "Transaction deleted",

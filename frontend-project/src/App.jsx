@@ -17,6 +17,8 @@ import Analytics from "./components/Analytics";
 import Reports from "./components/Reports";
 import Insights from "./components/Insights";
 import Navbar from "./components/Navbar";
+import BudgetTracker from "./components/BudgetTracker";
+
 
 import { Wallet } from "lucide-react";
 
@@ -124,7 +126,9 @@ function Dashboard() {
   return (
     <div className="space-y-10 bg-white/60 backdrop-blur rounded-3xl p-6 shadow-sm">
       <Summary />
+       <BudgetTracker />
       <TransactionsList />
+
     </div>
   );
 }
