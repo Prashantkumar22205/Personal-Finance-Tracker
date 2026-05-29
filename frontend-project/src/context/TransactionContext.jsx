@@ -11,6 +11,7 @@ export function TransactionProvider({ children }) {
   /* ---------------------------------
      Fetch Transactions From Backend
   ---------------------------------- */
+  console.log("API URL:", import.meta.env.VITE_API_URL);
   const fetchTransactions = async () => {
     try {
 

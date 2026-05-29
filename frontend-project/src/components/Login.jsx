@@ -31,6 +31,7 @@ export default function Login({ onLogin }) {
 
     setLoading(true);
     try {
+        console.log("API URL:", import.meta.env.VITE_API_URL);
        const res = await axios.post( `${import.meta.env.VITE_API_URL}/api/auth/login`,{
             email,
             password
