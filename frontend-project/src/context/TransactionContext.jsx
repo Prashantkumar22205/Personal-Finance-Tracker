@@ -15,7 +15,7 @@ export function TransactionProvider({ children }) {
     try {
 
       const res = await axios.get(
-        "http://localhost:3000/api/transactions",
+        `${import.meta.env.VITE_API_URL}/api/transactions`,
         {
           withCredentials: true,
         }
@@ -41,7 +41,7 @@ export function TransactionProvider({ children }) {
     try {
 
       const res = await axios.post(
-        "http://localhost:3000/api/transactions/add",
+        `${import.meta.env.VITE_API_URL}/api/transactions/add`,
         transactionData,
         {
           withCredentials: true,
@@ -65,7 +65,7 @@ export function TransactionProvider({ children }) {
     try {
 
       await axios.delete(
-        `http://localhost:3000/api/transactions/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/transactions/${id}`,
         {
           withCredentials: true,
         }
@@ -86,7 +86,7 @@ export function TransactionProvider({ children }) {
   try {
 
     const res = await axios.put(
-      `http://localhost:3000/api/transactions/${id}`,
+      `${import.meta.env.VITE_API_URL}/api/transactions/${id}`,
       updatedData,
       {
         withCredentials: true,
